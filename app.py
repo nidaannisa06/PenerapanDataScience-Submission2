@@ -5,8 +5,8 @@ import numpy as np
 
 # Muat model pipeline dan label encoder
 try:
-    full_pipeline = joblib.load('/content/student_performance_pipeline.pkl')
-    label_encoder = joblib.load('/content/status_label_encoder.pkl')
+    full_pipeline = joblib.load('student_performance_pipeline.pkl')
+    label_encoder = joblib.load('status_label_encoder.pkl')
 except FileNotFoundError:
     st.error("Model atau encoder tidak ditemukan. Pastikan file .pkl ada di direktori yang sama.")
     st.stop()
