@@ -8,7 +8,7 @@ try:
     full_pipeline = joblib.load('student_performance_pipeline.pkl')
     label_encoder = joblib.load('status_label_encoder.pkl')
 except FileNotFoundError:
-    st.error("Model atau encoder tidak ditemukan. Pastikan file .pkl ada di direktori yang sama.")
+    st.error("Model atau encoder tidak ditemukan. Pastikan file .pkl ada di direktori yang sama dengan app.py.")
     st.stop()
 
 # DEFINISI MAPPING UNTUK KOLOM KATEGORI
@@ -281,7 +281,8 @@ gender_map = {
 try:
     df = pd.read_csv('data.csv', sep=';')
 except FileNotFoundError:
-    st.error("File 'data.csv' tidak ditemukan. Pastikan ada di direktori /content/.")
+    # PERBAIKAN: Pesan error diubah agar lebih akurat
+    st.error("File 'data.csv' tidak ditemukan. Pastikan ada di direktori yang sama dengan app.py.")
     st.stop()
 
 
