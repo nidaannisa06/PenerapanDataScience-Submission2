@@ -279,7 +279,7 @@ gender_map = {
 
 # Muat data asli untuk mendapatkan nilai default (mode/mean)
 try:
-    df = pd.read_csv('data.csv', sep=';')
+    df = pd.read_csv('student_performance_dashboard.csv', sep=';')
 except FileNotFoundError:
     # PERBAIKAN: Pesan error diubah agar lebih akurat
     st.error("File 'data.csv' tidak ditemukan. Pastikan ada di direktori yang sama dengan app.py.")
