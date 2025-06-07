@@ -463,7 +463,7 @@ def get_user_input(data_frame):
         input_data['Nationality'] = nationality_map[st.selectbox(
             'Kewarganegaraan',
             options=list(nationality_map.keys()),
-            index=list(nationality_map.keys()).index(get_default_display(data_frame['Nacionality'], nationality_map))
+            index=list(nationality_map.keys()).index(get_default_display(data_frame['Nationality'], nationality_map))
         )]
 
         # Mothers_qualification
