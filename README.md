@@ -60,45 +60,40 @@ python -m venv venv
 3. **Akses Dashboard** : Untuk mengakses dashboard di Looker Studio, gunakan tautan yang disediakan di bagian "Business Dashboard" di bawah ini.
 
 ## **Menjalankan Secara Lokal (Opsional)**
-
 Jika telah melakukan langkah-langkah Setup Environment di atas untuk menjalankan proyek secara lokal:
 1. Pastikan Virtual Environment Aktif: Di terminal atau command prompt, pastikan Anda telah mengaktifkan virtual environment.
 2. Jalankan Skrip Utama: Navigasikan ke direktori utama proyek Anda. Kemudian, jalankan file Python utama proyek Anda. Jika file utama Anda adalah main.py, app.py, atau dashboard.py (sesuaikan dengan nama file Anda):
+
 ```Bash
     python nama_file_utama_anda.py
 ```
-3. Akses Dashboard: Setelah skrip berhasil dijalankan, jika dashboard Anda di-hosting secara lokal, alamat akses biasanya akan ditampilkan di terminal (misalnya, http://127.0.0.1:8050/ atau http://localhost:5000/). Namun, untuk dashboard Looker Studio, Anda cukup mengakses tautan  yang di [Employee Attrition Dasboard Jaya Jaya Maju](https://lookerstudio.google.com/reporting/5b531828-11a6-45d6-8dc6-421703777b92) berikan di bagian "Business Dashboard".
+
+3. Akses Dashboard: Setelah skrip berhasil dijalankan, jika dashboard Anda di-hosting secara lokal, alamat akses biasanya akan ditampilkan di terminal (misalnya, http://127.0.0.1:8050/ atau http://localhost:5000/). Namun, untuk dashboard Looker Studio, Anda cukup mengakses tautan [Student's Performance Dasboard Jaya Jaya Institut](https://lookerstudio.google.com/reporting/9467bde1-b17d-404e-8656-25e4eac16513).
 
 ## Business Dashboard
 Saya telah membuat business dashboard yang bertujuan untuk membantu Jaya Jaya Institut dalam memahami data siswa dan memonitor performa mereka. Dashboard ini berisi visualisasi kunci yang menampilkan distribusi nilai siswa, faktor-faktor demografis yang mungkin memengaruhi performa, serta tren performa dari waktu ke waktu (jika data memungkinkan).
 
-[Sertakan Link Dashboard Anda di Sini]
+[Student's Performance Dasboard Jaya Jaya Institut](https://lookerstudio.google.com/reporting/9467bde1-b17d-404e-8656-25e4eac16513)
 
 ## Menjalankan Sistem Machine Learning
 Saya telah mengembangkan prototype sistem Machine Learning menggunakan Streamlit yang siap digunakan untuk memprediksi potensi dropout siswa.
-
 Anda dapat mengakses prototype sistem Machine Learning ini secara langsung melalui deployment di Streamlit Community Cloud:
-
 [Link Deployment Streamlit](https://penerapandatascience-submission2-ip6c28uldcf8pn3kbqf4zk.streamlit.app/)
 
-Cara Menjalankan Proyek
+### Cara Menjalankan Proyek
+1. Menggunakan Google Colaboratory (Direkomendasikan)
+- Buka Notebook: Unggah atau buka file notebook .ipynb proyek ini di Google Colab.
+- Jalankan Semua Sel: Pastikan Anda menjalankan semua sel kode secara berurutan, dari atas ke bawah. Ini akan memproses data, melatih model (jika ada), dan menyiapkan dashboard.
+- Akses Dashboard: Untuk mengakses dashboard di Looker Studio (atau tool lain), gunakan tautan yang disediakan di bagian "Business Dashboard" di atas.
 
-Menggunakan Google Colaboratory (Direkomendasikan)
-
-    Buka Notebook: Unggah atau buka file notebook .ipynb proyek ini di Google Colab.
-    Jalankan Semua Sel: Pastikan Anda menjalankan semua sel kode secara berurutan, dari atas ke bawah. Ini akan memproses data, melatih model (jika ada), dan menyiapkan dashboard.
-    Akses Dashboard: Untuk mengakses dashboard di Looker Studio (atau tool lain), gunakan tautan yang disediakan di bagian "Business Dashboard" di atas.
-
-Menjalankan Secara Lokal (Opsional)
-Jika telah melakukan langkah-langkah Setup Environment di atas untuk menjalankan proyek secara lokal:
-
-    Pastikan Virtual Environment Aktif: Di terminal atau command prompt, pastikan Anda telah mengaktifkan virtual environment.
-    Jalankan Skrip Utama: Navigasikan ke direktori utama proyek Anda. Kemudian, jalankan file Python utama proyek Anda. Jika file utama Anda adalah main.py, app.py, atau dashboard.py (sesuaikan dengan nama file Anda, dalam kasus ini adalah app.py untuk Streamlit):
-    Bash
-
+2. Menjalankan Secara Lokal (Opsional)
+- Jika telah melakukan langkah-langkah Setup Environment di atas untuk menjalankan proyek secara lokal:
+- Pastikan Virtual Environment Aktif: Di terminal atau command prompt, pastikan Anda telah mengaktifkan virtual environment.
+- Jalankan Skrip Utama: Navigasikan ke direktori utama proyek Anda. Kemudian, jalankan file Python utama proyek Anda. Jika file utama Anda adalah main.py, app.py, atau dashboard.py (sesuaikan dengan nama file Anda, dalam kasus ini adalah app.py untuk Streamlit):
+```Bash
 streamlit run app.py
-
-Akses Dashboard: Setelah skrip Streamlit berhasil dijalankan, aplikasi akan terbuka otomatis di browser Anda (biasanya di http://localhost:8501). Namun, untuk dashboard eksternal seperti Looker Studio, Anda cukup mengakses tautan yang diberikan di bagian "Business Dashboard".
+```
+- Akses Dashboard: Setelah skrip Streamlit berhasil dijalankan, aplikasi akan terbuka otomatis di browser Anda (biasanya di http://localhost:8501). Namun, untuk dashboard eksternal seperti Looker Studio, Anda cukup mengakses tautan yang diberikan di bagian "Business Dashboard".
 
 
 ## Conclusion
